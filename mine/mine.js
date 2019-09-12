@@ -1,7 +1,19 @@
+let name = 'zero';
+
+//코드가 쓰여진순간부터 정해져있다.
+function log (){
+  console.log(name);
+}
+function wrapper(){
+  name = 'nero';
+  log();
+}
+wrapper();
+
 let dataset = [];
 let tbody = document.querySelector("#table tbody");
 document.querySelector("#exec").addEventListener("click", function() {
-  tbody.innerHTML = "";
+  tbody.innerHTML = ""; //중복해서 늘어나는것을 방지하는 코드
   let ver = parseInt(document.querySelector("#ver").value);
   let hor = parseInt(document.querySelector("#hor").value);
   let mine = parseInt(document.querySelector("#mine").value);
