@@ -80,29 +80,48 @@ function color(number, result){
   
 }
 
-setTimeout(function callback() {
-  color(winningNumber[0], result);
-}, 1000);
+// setTimeout(function callback() {
+//   color(winningNumber[0], result);
+// }, 1000);
 
-setTimeout(function callback() {
-  color(winningNumber[1],result);
-}, 2000);
+// setTimeout(function callback() {
+//   color(winningNumber[1],result);
+// }, 2000);
 
-setTimeout(function callback() {
-  color(winningNumber[2],result);
-}, 3000);
+// setTimeout(function callback() {
+//   color(winningNumber[2],result);
+// }, 3000);
 
-setTimeout(function callback() {
-  color(winningNumber[3],result);
-}, 4000);
+// setTimeout(function callback() {
+//   color(winningNumber[3],result);
+// }, 4000);
 
-setTimeout(function callback() {
-  color(winningNumber[4],result);
-}, 5000);
-setTimeout(function callback() {
-  color(winningNumber[5],result);
-}, 6000);
+// setTimeout(function callback() {
+//   color(winningNumber[4],result);
+// }, 5000);
+// setTimeout(function callback() {
+//   color(winningNumber[5],result);
+// }, 6000);
 
+// for ( let i = 0; i< winningNumber.length; i++){
+//   setTimeout(function(){
+//     color(winningNumber[i], result);
+//   }, 1000 * i);
+// }
+for (var i = 0; i< winningNumber.length; i++){
+  (function closure(j){
+    setTimeout(function(){
+      color(winningNumber[j], result);
+    }, 100 * j);
+  })(i);
+  
+  // function closure(j){
+  //   setTimeout(function(){
+  //     color(winningNumber[j], result);
+  //   }, 100 * j);
+  // }
+  // closure(i);
+}
 setTimeout(function callback() {
   // let bonusSpace = document.getElementsByClassName("bonus")[0];
   let bonusSpace = document.querySelector(".bonus");
