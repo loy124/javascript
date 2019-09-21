@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8d5d4dc4-d44c-4a2a-8b41-b115dfbe8604" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tictacto(computer)/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tictacto(computer)/tictacto.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/action.js" beforeDir="false" afterPath="$PROJECT_DIR$/action.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tictacto/tictacto.js" beforeDir="false" afterPath="$PROJECT_DIR$/../tictacto/tictacto.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,6 +12,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="JsbtTreeLayoutManager">
+    <layout place="tools.popupGrunt">
+      <scroll-view-position x="0" y="0" />
+    </layout>
   </component>
   <component name="ProjectId" id="1R3Ww31g7NNtXZeDsI9aFOicWpa" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -50,6 +50,7 @@
       <workItem from="1568896495564" duration="8098000" />
       <workItem from="1568944653116" duration="6925000" />
       <workItem from="1569033811167" duration="1198000" />
+      <workItem from="1569069994900" duration="1342000" />
     </task>
     <servers />
   </component>
