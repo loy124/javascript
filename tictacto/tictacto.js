@@ -25,18 +25,18 @@ const onClick = function(e) {
     let full = false;
     //가로줄 검사
     if (
-      blanks[whatLine][0].textContent === turn &&
-      blanks[whatLine][1].textContent === turn &&
-      blanks[whatLine][2].textContent === turn
+        blanks[whatLine][0].textContent === turn &&
+        blanks[whatLine][1].textContent === turn &&
+        blanks[whatLine][2].textContent === turn
     ) {
       full = true;
     }
 
     //세로줄 검사
     if (
-      blanks[0][whatBlank].textContent === turn &&
-      blanks[1][whatBlank].textContent === turn &&
-      blanks[2][whatBlank].textContent === turn
+        blanks[0][whatBlank].textContent === turn &&
+        blanks[1][whatBlank].textContent === turn &&
+        blanks[2][whatBlank].textContent === turn
     ) {
       full = true;
     }
@@ -44,23 +44,23 @@ const onClick = function(e) {
     if (whatLine - whatBlank === 0) {
       //대각선 검사 필요한 경우
       if (
-        blanks[0][0].textContent === turn &&
-        blanks[1][1].textContent === turn &&
-        blanks[2][2].textContent === turn
+          blanks[0][0].textContent === turn &&
+          blanks[1][1].textContent === turn &&
+          blanks[2][2].textContent === turn
       ) {
         full = true;
       }
     }
     if (Math.abs(whatLine - whatBlank) === 2) {
       if (
-        blanks[0][2].textContent === turn &&
-        blanks[1][1].textContent === turn &&
-        blanks[2][0].textContent === turn
+          blanks[0][2].textContent === turn &&
+          blanks[1][1].textContent === turn &&
+          blanks[2][0].textContent === turn
       ) {
         full = true;
       }
     }
-    
+
     console.log(full);
     //다 찼으면
     if (full === true) {
