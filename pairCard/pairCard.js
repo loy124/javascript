@@ -108,6 +108,7 @@ cardSetting(horizontal, vertical);
 // Object.keys(obj).forEach(function(key){
 //     obj2[key] = obj[key];
 // });
+// Object.assign() //1단계 복사
 //깊은복사
 // obj = JSON.parse(JSON.stringify(obj));
 // let prot = {
@@ -127,3 +128,16 @@ cardSetting(horizontal, vertical);
 //     return car;
 //
 // }
+// Object.create(prot)
+// function 카드공장(name, att, hp){
+//     let car = Object.create(prot);
+//         car.name = name;
+//         car.att = att;
+//         car.htp = hp;
+//     return car;
+//
+// }
+// let card = Object.create(프로토타입)
+//
+// let card = {}
+// card.__proto__ = 프로토타입;
