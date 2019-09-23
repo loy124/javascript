@@ -131,9 +131,9 @@ cardSetting(horizontal, vertical);
 // Object.create(prot)
 // function 카드공장(name, att, hp){
 //     let car = Object.create(prot);
-//         car.name = name;
-//         car.att = att;
-//         car.htp = hp;
+// //         car.name = name;
+// //         car.att = att;
+// //         car.htp = hp;
 //     return car;
 //
 // }
@@ -141,3 +141,21 @@ cardSetting(horizontal, vertical);
 //
 // let card = {}
 // card.__proto__ = 프로토타입;
+// var prototype = {
+//     type: '카드'
+// }
+// function 카드공장(name, att, hp){
+//     var card = Object.create(prototype);
+//     card.name = name;
+//     card.att = att;
+//     card.hp = hp;
+//     return card
+// }
+//
+// function Card(name, att, hp) {
+//     this.name = name;
+//     this.att = att;
+//     this.hp = hp;
+// }
+// Card.prototype = prototype;
+// new Card("이온유", 11,11);
